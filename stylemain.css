@@ -1,0 +1,152 @@
+body{
+    background-color: #76885B;
+    overflow-x: hidden;
+}
+
+.didi{
+    color: red;
+    font-size: 19px;
+    font-weight: bold;
+    
+}
+
+#historyan{
+    padding: 30px;
+}
+
+.dodo{
+    color: green;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#saldosss{
+    display: flex;;
+    margin: 10px auto;
+    background-color: #DDDDDD;
+    height: 160px;
+    width: 30%;
+    padding: 50px 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+#sukan{
+    overflow: hidden;
+    overflow-y:scroll;
+    height: 80%;
+    text-align: center;
+    padding-left:20px ;
+    padding-right: 20px;
+}
+#sukan::-webkit-scrollbar{
+    display: none;
+}
+
+#pengeluaran{
+    overflow:hidden; 
+    overflow-y:scroll;
+    height: 80%;
+    text-align: center;
+    padding-left:20px ;
+    padding-right: 20px;
+    
+}
+
+#pengeluaran::-webkit-scrollbar{
+    display: none;
+}
+.masuk{
+    text-align: center;
+    background-color: #627254;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-weight: bolder;
+    
+}
+
+.keluar{
+    text-align: center;
+    background-color: #627254;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.hehe{
+    display: flex;
+    justify-content: center;
+}
+
+.haha{
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 90%;
+    text-align:left;
+}
+
+#kedua{
+    margin-top: 100px;
+}
+
+h1{
+    color: white;
+}
+
+a:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #kedua{
+        margin-top: 40px;
+    }
+    .history{
+        display: flex;
+    }
+
+    .masuk{
+        width: 100%;
+        height: 200px;
+    }
+
+    .keluar{
+        width: 100%;
+        height: 200px;
+    }
+    h1{
+        font-size: 20px;
+        color: white;
+    }
+
+    #saldosss{
+        width: 60%;
+        height: 20%;
+    }
+    #pengeluaran{
+        overflow:hidden; 
+        overflow-y:scroll;
+        height: 60%;
+        text-align: center;
+        padding-left:20px ;
+        padding-right: 20px;
+        
+    }
+    #sukan{
+        overflow: hidden;
+        overflow-y:scroll;
+        height: 60%;
+        text-align: center;
+        padding-left:20px ;
+        padding-right: 20px;
+    }
+  }
