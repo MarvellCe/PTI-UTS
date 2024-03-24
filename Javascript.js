@@ -51,7 +51,7 @@ let totalSaldo = 0;
 
 let isinya = data.map((item, index) => {
   totalSaldo += item.nominal; 
-  return `<li class="list-group-item">${item.nama}-<span class="dodo">${item.nominal}-</span>${item.select}</li>`;
+  return `<li class="list-group-item"><span class="dodo">${item.nama}<br> ${item.nominal}<br>${item.select} </span></li><hr>`;
 }).join("");
 
 const tambahinc = document.createElement("li");
@@ -73,7 +73,7 @@ function outcome() {
   if(ara === '' || isNaN(iru) || iru <= 0 || uri === ''){ 
     alert("Masukkan data dengan benar");
   } else {
-    let manatahu = [{ nama: ara, nominal: -iru, select: uri }];
+    let manatahu = [{ nama: ara, nominal: iru, select: uri }];
     if(localStorage.getItem("manatahu")) {
       manatahu = JSON.parse(localStorage.getItem("manatahu")).concat(manatahu);
     }
@@ -92,7 +92,7 @@ let saldoku = 0;
 
 let isiuser = manatahu.map((item, index) => {
   saldoku += item.nominal; 
-  return `<li class="list-group-item">${item.nama}<span class="didi">${item.nominal}-</span>${item.select}</li>`;
+  return `<li class="list-group-item" ><span class="didi">${item.nama}<br>${item.nominal}<br>${item.select} <span></li>`;
 }).join("");
 
 const tambahout = document.createElement("li"); 
@@ -101,7 +101,7 @@ tambahout.innerHTML = isiuser;
 const posisi = document.getElementById("pengeluaran");
 posisi.appendChild(tambahout); 
 
-document.getElementById("saldomu").innerText = `Total Saldo: ${totalSaldo + saldoku}`;
+document.getElementById("saldomu").innerText = `Total Saldo: ${totalSaldo - saldoku}`;
 
 
 
